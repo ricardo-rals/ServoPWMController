@@ -18,3 +18,10 @@ void init_pwm(uint gpio) {
 void set_servo_angle(uint gpio, uint16_t pulse_width) {
     pwm_setup(gpio, pulse_width);
 }
+
+void set_led_brightness(uint gpio, uint16_t pulse_width) {
+    uint slice_num = pwm_gpio_to_slice_num(gpio);
+    uint channel = pwm_gpio_to_channel(gpio);
+    uint16_t level = (pulse_width * PWM_WRAP) / 20000;  // Normalizando brilho baseado no servo
+    pwm_set_chan_level(slice_num, channel, level);
+}
