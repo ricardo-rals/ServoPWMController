@@ -12,5 +12,8 @@ int main() {
         // Posição 180 graus
         set_servo_angle(SERVO_PIN, 2400);
         sleep_ms(5000);
+
+        set_servo_angle(SERVO_PIN, 1470);
+        sleep_ms(5000);
     }
 }
