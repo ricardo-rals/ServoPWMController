@@ -12,5 +12,6 @@
 // Protótipos das funções
 
 void init_pwm(uint gpio);
-
+void pwm_setup(uint gpio, uint16_t pulse_width);
+void set_servo_angle(uint gpio, uint16_t pulse_width);
 #endif 

@@ -35,7 +35,7 @@ pico_sdk_init()
 
 # Add executable. Default name is the project name, version 0.1
 
-add_executable(ServoPWMController ServoPWMController.c )
+add_executable(ServoPWMController ServoPWMController.c pwm_servo.c)
 
 pico_set_program_name(ServoPWMController "ServoPWMController")
 pico_set_program_version(ServoPWMController "0.1")

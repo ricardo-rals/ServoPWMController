@@ -18,5 +18,14 @@ int main() {
 
         set_servo_angle(SERVO_PIN, 500);
         sleep_ms(5000);
+
+        for (uint16_t pos = 500; pos <= 2400; pos += 5) {
+            set_servo_angle(SERVO_PIN, pos);
+            sleep_ms(10);
+        }
+        for (uint16_t pos = 2400; pos >= 500; pos -= 5) {
+            set_servo_angle(SERVO_PIN, pos);
+            sleep_ms(10);
+        }
     }
 }
