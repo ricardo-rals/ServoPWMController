@@ -46,6 +46,7 @@ pico_enable_stdio_usb(ServoPWMController 1)
 
 # Add the standard library to the build
 target_link_libraries(ServoPWMController
+        hardware_pwm
         pico_stdlib)
 
 # Add the standard include files to the build
