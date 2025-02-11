@@ -5,8 +5,9 @@
 int main() {
     stdio_init_all();
 
-    // Inicializa o PWM para o servo
+    // Inicializa o PWM para o servo e o LED
     init_pwm(SERVO_PIN);
+    init_pwm(LED_GPIO);
 
     while (1) {
         // Posição 180 graus
