@@ -7,3 +7,7 @@ void init_pwm(uint gpio) {
     pwm_set_clkdiv(slice_num, 125.0f);  // Define o divisor do clock para ajustar a frequência
     pwm_set_enabled(slice_num, true);
 }
+
+void set_servo_angle(uint gpio, uint16_t pulse_width) {
+    pwm_setup(gpio, pulse_width);
+}

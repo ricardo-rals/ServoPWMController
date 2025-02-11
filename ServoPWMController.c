@@ -1,14 +1,16 @@
 #include <stdio.h>
 #include "pico/stdlib.h"
+#include "pwm_servo.h"
 
-
-
-int main()
-{
+int main() {
     stdio_init_all();
 
-    while (true) {
-        printf("Hello, world!\n");
-        sleep_ms(1000);
+    // Inicializa o PWM para o servo
+    init_pwm(SERVO_PIN);
+
+    while (1) {
+        // Posição 180 graus
+        set_servo_angle(SERVO_PIN, 2400);
+        sleep_ms(5000);
     }
 }
