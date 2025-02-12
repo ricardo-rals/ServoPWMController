@@ -78,3 +78,10 @@ servo-pwm-controller/
 3. Configure o SDK do Raspberry Pi Pico W de acordo com a [documentação oficial](https://datasheets.raspberrypi.com/pico/getting-started-with-pico.pdf).
 
 4. Siga as instruções no Visual Studio Code para compilar e carregar o projeto no seu Raspberry Pi Pico.
+
+
+### Video de Apresentação
+
+Para um guia visual sobre como configurar e executar este projeto, confira este.
+[YouTube video](https://youtu.be/lzIg79Zw-2o). 
+
